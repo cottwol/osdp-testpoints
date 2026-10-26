@@ -1,2 +1,3 @@
-sudo docker save -o ../osdp-pd.tar osdp-pd
+sudo docker save -o osdp-pd.tar osdp-pd
+sudo docker save -o osdp-acu.tar osdp-acu
 

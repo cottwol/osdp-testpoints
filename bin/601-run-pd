@@ -1,0 +1,2 @@
+sudo docker run -p 8022:22 -p 8080:80 --device /dev/ttyUSB0:/dev/ttyUSB0 osdp-pd
+

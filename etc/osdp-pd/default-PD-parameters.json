@@ -1,0 +1,7 @@
+{
+  "raw-value":"80800080","bits":"26","role":"PD",
+  "address":"00","serial-speed":"9600","serial-device":"/dev/ttyUSB0",
+"enable-trace:":"1",
+  "verbosity" : "3", "enable-secure-channel":"DEFAULT"
+}
+
