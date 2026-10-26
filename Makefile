@@ -1,4 +1,5 @@
 OSDP_CONTAINERS=osdp-acu.tar osdp-pd.tar
+VERSION=0.02
 
 all:	build-image etc/Dockerfile etc/up.osdp
 
@@ -34,5 +35,6 @@ osdp-pd.tar:	etc/osdp-pd/Dockerfile
 
 package:	all ${OSDP_CONTAINERS}
 	bin/4-save-docker
+	tar czvf osdp-testpoints_${VERSION}.tgz *tar
 	ls -l *tar
 
