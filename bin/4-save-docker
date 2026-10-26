@@ -1,0 +1,2 @@
+sudo docker save -o ../osdp-pd.tar osdp-pd
+
