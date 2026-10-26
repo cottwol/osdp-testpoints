@@ -1,3 +1,5 @@
+\newpage {}
+
 # 3. Docker Images #
 
 # 3.1 osdp-pd #
@@ -9,13 +11,11 @@ as a PD.
 
 Run it as-is with the noted configuration values.  SSH in to edit and change
 the parameters, capture a trace etc.
-```
 
 # 3.1.1.1 Controlling the PD #
 
 SSH in to control the PD.  username root password password.  cd to /opt/osdp-conformance/run/PD
 to alter OSDP PD operation.  SCP can be used to fetch the trace or log files.
-
 
 # 3.1.1.2 Reset to Defaults #
 
@@ -39,7 +39,6 @@ open-osdp
 
 - osdp.log in the PD directory is the PD log.
 - current.osdpcap in the PD directory is the OSDP trace file
-- osdp
 
 # 3.1.2 Configuration #
 
@@ -49,12 +48,11 @@ to tune this configuration.
 - assumes serial port is /dev/ttyUSB0
 - assumes speed 9600 address 0
 - assumes secure channel is enabled but not initialized
-- assumes osdpcap tracing.  
+- assumes osdpcap tracing.
 - assumes log verbosity level 3 (normal)
 
 # Punch List #
 
-- enable ssh, create opsadmin1 usual creds
 - attach mqtt command adapter
 - confirm restart is available as a command
 

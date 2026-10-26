@@ -22,7 +22,8 @@ osdp-pd.tar:	etc/osdp-pd/Dockerfile
 
 package:	all ${OSDP_CONTAINERS}
 	bin/4-save-docker
+	(cd doc; make; cp *pdf ..)
 	sudo chmod +r *tar
-	tar czvf osdp-testpoints_${VERSION}.tgz *tar
-	ls -l *tar
+	tar czvf osdp-testpoints_${VERSION}.tgz *tar *pdf
+	ls -l *tar *pdf
 
